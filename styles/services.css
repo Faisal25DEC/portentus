@@ -1,0 +1,134 @@
+@import url("./index.css");
+.services-container {
+  margin: 0;
+  margin-right: auto;
+  max-width: 1400px;
+  display: flex;
+  gap: 60px;
+  padding: 60px 0px 0px 0px;
+}
+.services-img-container {
+  width: 1110px;
+  height: 730px;
+}
+.services-img-container img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+.services-title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.services-title-container > p {
+  font-size: 12px;
+  color: var(--text-primary);
+  font-family: "Poppins";
+  letter-spacing: 1.5px;
+}
+.services-heading {
+  padding-bottom: 2px;
+}
+.services-title-container .services-number {
+  top: -25px;
+}
+.services-title-container > .services-desc {
+  text-align: left;
+  width: 100%;
+  font-size: 14px;
+  padding: 0;
+}
+.services-list-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0px;
+
+  flex-direction: column;
+}
+.service-list-item {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding: 0px 0px 10px 0px;
+  border-bottom: solid 1px rgb(227, 227, 227);
+}
+.service-list-item-img {
+  max-width: 290px;
+}
+.service-list-item-img > img {
+  width: 100%;
+  height: 100%;
+}
+.service-list-item-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 80%;
+}
+.service-list-item-desc > h1 {
+  color: var(--color-secondary);
+  font-size: 30px;
+}
+.service-list-item-desc > p {
+  font-size: 14px;
+  font-family: "Poppins";
+  line-height: 22px;
+  color: var(--text-primary);
+  padding-bottom: 10px;
+  letter-spacing: 1.5px;
+}
+.service-list-item-desc > p:nth-child(4) {
+  color: var(--color-secondary);
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.service-list-item-desc > p:nth-child(4):hover {
+  opacity: 0.7;
+}
+
+.services-list-container > .service-list-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 500px) {
+  .services-img-container {
+    display: none;
+  }
+  .services-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .services-list-container {
+    text-align: center;
+  }
+  .services-list-container > .service-list-item:nth-child(even) {
+    flex-direction: column;
+    text-align: center;
+  }
+  .services-title-container > .services-desc {
+    text-align: center;
+  }
+  .service-list-item-img {
+    max-width: 200px;
+  }
+  .services-desc-container {
+    width: 95%;
+    margin: auto;
+  }
+  .service-list-item {
+    flex-direction: column;
+  }
+  .service-list-item-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 95%;
+  }
+}

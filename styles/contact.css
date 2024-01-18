@@ -1,0 +1,153 @@
+@import url("./index.css");
+
+.contact-container {
+  max-width: 1024px;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  gap: 10px;
+  height: 694px;
+}
+.contact-image {
+  width: 35%;
+  height: 100%;
+  z-index: -1;
+}
+.contact-image > img {
+  width: 100%;
+  height: 694px;
+
+  object-fit: cover;
+  opacity: 0.6;
+}
+.contact-heading {
+  width: 35%;
+  background-color: rgba(2, 79, 185, 0.8);
+  color: white;
+  padding-left: 30px;
+  padding-top: 60px;
+}
+.contact-heading > .contact-heading-title {
+  font-size: 30px;
+  letter-spacing: -1.5px;
+}
+.contact-heading-underline {
+  display: block;
+  width: 100px;
+  height: 5px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+.contact-title-desc {
+  padding-top: 30px;
+  width: 90%;
+  font-family: "Poppins";
+}
+.contact-form-container {
+  color: var(--text-primary);
+  letter-spacing: 2px;
+
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 7.5px;
+}
+.contact-form-input-container label {
+  font-family: "Poppins";
+}
+.contact-form-input-container input {
+  border: none;
+  border-bottom: solid 1px lightgrey;
+  outline: none;
+  height: 30px;
+}
+.contact-info-container {
+  padding-top: 10px;
+}
+.contact-info-container > p {
+  font-family: "Poppins";
+}
+.contact-info-items {
+  display: flex;
+  gap: 10px;
+  padding-top: 10px;
+  justify-content: space-between;
+}
+
+.contact-info-item {
+  padding: 15px 50px;
+  border-radius: 10px;
+  background-color: rgb(241, 244, 249);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.contact-info-item > img {
+  width: 75px;
+}
+
+.contact-info-item > p {
+  font-family: "Poppins";
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+.contact-message {
+  padding-top: 10px;
+  width: 100%;
+}
+.contact-message > p {
+  font-family: "Poppins";
+  font-size: 12px;
+  padding: 10px 0px;
+}
+.contact-message > textarea {
+  width: 100%;
+  border: solid 1px lightgrey;
+  border-radius: 5px;
+}
+.form-button {
+  background-color: var(--color-secondary);
+  color: white;
+  padding: 20px 0px;
+  border: none;
+  border-radius: 2px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+.contact-heading-mobile {
+  display: none;
+}
+@media (max-width: 500px) {
+  .contact-container {
+    height: fit-content;
+  }
+  .contact-image {
+    display: none;
+  }
+  .contact-form-container {
+    width: 85%;
+  }
+  .contact-heading {
+    display: none;
+  }
+  .contact-info-items {
+    flex-direction: column;
+  }
+  .contact-heading-mobile {
+    display: block;
+    padding: 10px 0px;
+    text-align: center;
+    font-family: "Poppins";
+  }
+}
